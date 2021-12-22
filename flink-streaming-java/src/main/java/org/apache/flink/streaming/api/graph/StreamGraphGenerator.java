@@ -310,7 +310,7 @@ public class StreamGraphGenerator {
 
         /***************************************************************************************
          * TODO 设置各种属性
-         *  当时在生成 StreamGraphGenerator 的时候，就已经把各种属性设置到 StreamGraphGeneratot 中了
+         *  当时在生成 StreamGraphGenerator 的时候，就已经把各种属性设置到 StreamGraphGenerator 中了
          *  现在把 StreamGraphGenerator 中的属性，设置到 streamGraph 中
          */
         graph.setChaining(chaining);
@@ -429,6 +429,7 @@ public class StreamGraphGenerator {
         // call at least once to trigger exceptions about MissingTypeInfo
         transform.getOutputType();
 
+        // TODO: 22/12/2021 获取转化 转化机
         @SuppressWarnings("unchecked")
         final TransformationTranslator<?, Transformation<?>> translator =
                 (TransformationTranslator<?, Transformation<?>>)
@@ -436,6 +437,7 @@ public class StreamGraphGenerator {
 
         Collection<Integer> transformedIds;
         if (translator != null) {
+            // TODO: 22/12/2021 对 transform 进行转化 成stream
             transformedIds = translate(translator, transform);
         } else {
             transformedIds = legacyTransform(transform);

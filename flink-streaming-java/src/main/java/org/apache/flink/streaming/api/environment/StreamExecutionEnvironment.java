@@ -1983,7 +1983,7 @@ public class StreamExecutionEnvironment {
      * same operations when calling {@link #execute()} multiple times.
      *
      * @param jobName Desired name of the job
-     * @param clearTransformations Whether or not to clear previously registered transformations
+     * @param clearTransformations Whether or not to clear previously registered transformations 是否清除以前的转换
      * @return The streamgraph representing the transformations
      */
     @Internal
@@ -2003,6 +2003,10 @@ public class StreamExecutionEnvironment {
 
         final RuntimeExecutionMode executionMode = configuration.get(ExecutionOptions.RUNTIME_MODE);
 
+        /***************************************************************************************
+         * TODO 生成StreamGraphGenerator 并赋值属性
+         *
+         */
         return new StreamGraphGenerator(transformations, config, checkpointCfg, getConfiguration())
                 .setRuntimeExecutionMode(executionMode)
                 .setStateBackend(defaultStateBackend)

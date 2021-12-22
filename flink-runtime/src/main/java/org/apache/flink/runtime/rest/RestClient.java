@@ -156,6 +156,7 @@ public class RestClient implements AutoCloseableAsync {
         NioEventLoopGroup group =
                 new NioEventLoopGroup(1, new ExecutorThreadFactory("flink-rest-client-netty"));
 
+        // TODO: 20/12/2021 启动程序引导 
         bootstrap = new Bootstrap();
         bootstrap
                 .option(
@@ -166,6 +167,7 @@ public class RestClient implements AutoCloseableAsync {
                 .handler(initializer);
 
         LOG.debug("Rest client endpoint started.");
+        // TODO: 21/12/2021 在RestClient 的内部其实就是实现初始化一个 Netty 的客户端
     }
 
     @Override
@@ -422,6 +424,10 @@ public class RestClient implements AutoCloseableAsync {
     private <P extends ResponseBody> CompletableFuture<P> submitRequest(
             String targetAddress, int targetPort, Request httpRequest, JavaType responseType) {
 
+        /***************************************************************************************
+         * TODO
+         *  通过Netty 客户端发送请求给 Netty 服务端
+         */
         final ChannelFuture connectFuture = bootstrap.connect(targetAddress, targetPort);
 
         final CompletableFuture<Channel> channelFuture = new CompletableFuture<>();
@@ -448,6 +454,11 @@ public class RestClient implements AutoCloseableAsync {
                                     throw new IOException(
                                             "Netty pipeline was not properly initialized.");
                                 } else {
+                                    /***************************************************************************************
+                                     * TODO
+                                     *  发送请求到 WebMonitorEndPoint 的 Netty 服务端
+                                     *  最终由：JobSubmitHandler 来执行处理。
+                                     */
                                     httpRequest.writeTo(channel);
                                     future = handler.getJsonFuture();
                                     success = true;
