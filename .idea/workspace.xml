@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0547796-11d8-416c-bc3e-773a2bfa92a2" name="Default Changelist" comment="" />
+    <list default="true" id="e0547796-11d8-416c-bc3e-773a2bfa92a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/flink-runtime/src/main/java/org/apache/flink/runtime/rest/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-runtime/src/main/java/org/apache/flink/runtime/rest/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/graph/StreamGraphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/graph/StreamGraphGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +13,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -27,6 +34,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="212z3BI0hVCeoqKvrqAelZR6pBE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,7 +70,7 @@
       <workItem from="1637153786289" duration="2863000" />
       <workItem from="1638140258268" duration="35167000" />
       <workItem from="1638661970867" duration="13747000" />
-      <workItem from="1638885238281" duration="41846000" />
+      <workItem from="1638885238281" duration="47899000" />
     </task>
     <servers />
   </component>
@@ -74,6 +82,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1639188984878" />
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1640008797802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1640008797802" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1638711097340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -94,10 +106,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="215" key="new project wizard/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1638711046448" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1639575876432">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1640131339662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1639575876432" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1640131339662" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639699286281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
